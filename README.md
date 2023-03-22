@@ -1,4 +1,4 @@
-This project fixes the broken URLs used in the examples in the [UIUC CIS API documentation](https://courses.illinois.edu/cisdocs/api). This project also holds the `cisapi.xsd` schema file, which is a broken link in the documentation and cannot be found elsewhere as of 2023-03-22. 
+This project fixes the broken URLs used in the examples in the [UIUC CIS API documentation](https://courses.illinois.edu/cisdocs/api). This project also holds the `cisapi.xsd` schema file([mirth.cc/fix-cisapi/cisapi.xsd](mirth.cc/fix-cisapi/cisapi.xsd)), which is a broken link in the documentation and cannot be found elsewhere as of 2023-03-22. 
 
 The tool fixes two and only two issues:
 - Change “/cisapi” to “/cisapp/explorer”
