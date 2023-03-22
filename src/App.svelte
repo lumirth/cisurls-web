@@ -55,6 +55,8 @@
 	<br />
 	You can find a link to the an archive of what the documentation looked like when this app was created <a href="https://web.archive.org/web/20160517202637/http://courses.illinois.edu/cisdocs/api">here</a>.
 	<br />
+	More information can be found in the Github repo for this app <a href="https://github.com/lumirth/fix-cisapi/">here</a>.
+	<br />
 	<br />
 	<form on:submit={handleSubmit}>
 	  <label for="originalUrl">Enter URL:</label>
