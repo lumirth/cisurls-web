@@ -51,7 +51,7 @@
   <main>
 	The CIS API documentation can be found <a
 	  href="https://courses.illinois.edu/cisdocs/api">on this page.</a
-	>
+	> You can find a link to the an archive of what the documentation looked like when this app was created <a href="https://web.archive.org/web/20160517202637/http://courses.illinois.edu/cisdocs/api">here</a>.
 	<br />
 	<br />
 	<form on:submit={handleSubmit}>
