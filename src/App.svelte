@@ -4,6 +4,12 @@
       return "";
     }
 
+	// Special case: if url matches https://courses.illinois.edu/cisapi/schedule/courses?year=2012&term=spring§ionTypeCode=LEC§ionTypeCode=Q&collegeCode=KV&creditHours=3&subject=CHEM&sessionId=1&gened=NAT&qp=atomic+structure
+	// Then add ampersands before each section symbol.
+	if (url.match(/https:\/\/courses\.illinois\.edu\/cisapi\/schedule\/courses\?year=\d{4}&term=\w+§ionTypeCode=\w+§ionTypeCode=\w+&collegeCode=\w+&creditHours=\d+&subject=\w+&sessionId=\d+&gened=\w+&qp=\w+/)) {
+		url = url.replace(/§ionTypeCode=/g, "&§ionTypeCode=");
+	}
+
     // Replace "/cisapi" with "/cisapp/explorer"
     url = url.replace("/cisapi", "/cisapp/explorer");
 
@@ -15,9 +21,9 @@
       url += ".xml";
     }
 
-    // add "mode=cascade" parameter if requested
-    // replace "mode=*" with "mode=cascade" if it already exists
-    // add "mode=cascade" with & or ? depending on if there are already parameters
+    // Add "mode=cascade" parameter if requested
+    // Replace "mode=*" with "mode=cascade" if it already exists
+    // Add "mode=cascade" with & or ? depending on if there are already parameters
     if (addCascade) {
       const index = url.indexOf("mode=");
       if (index !== -1) {
