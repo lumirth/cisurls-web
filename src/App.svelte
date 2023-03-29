@@ -67,20 +67,24 @@
 </script>
 
 <main>
-  The CIS API documentation can be found on <a
-    href="https://courses.illinois.edu/cisdocs/api">this page.</a
-  >
-  <br />
-  You can find a link to the an archive of what the documentation looked like when
-  this app was created
-  <a
-    href="https://web.archive.org/web/20160517202637/http://courses.illinois.edu/cisdocs/api"
-    >here</a
-  >.
-  <br />
-  More information can be found in the Github repo for this app
-  <a href="https://github.com/lumirth/fix-cisapi/">here</a>.
-  <br />
+	<ul>
+		<li>
+		  More information can be found in the Github repo for this app at
+		  <a href="https://github.com/lumirth/fix-cisapi/">github.com/lumirth/fix-cisapi</a>.
+		</li>
+		<li>
+		  The UIUC CIS API documentation can be found on
+		  <a href="https://courses.illinois.edu/cisdocs/api">courses.illinois.edu/cisdocs/api.</a>
+		</li>
+		<li>
+		  You can find a link to the an archive of what the documentation looked like when this app was created at
+		  <a href="https://web.archive.org/web/20160517202637/courses.illinois.edu/cisdocs/api">web.archive.org/web/20160517202637/courses.illinois.edu/cisdocs/api</a>.
+		</li>
+		<li>
+		  The XML schema for the UIUC CIS API can be found at
+		  <a href="https://mirth.cc/fix-cisapi/cisapi.xsd">mirth.cc/fix-cisapi/cisapi.xsd.</a> This schema cannot be found elsewhere, as the link in the documentation is broken.
+		</li>
+	  </ul>	  
   <br />
   <form on:submit={handleSubmit}>
     <label for="originalUrl">Enter URL:</label>
@@ -104,3 +108,12 @@
     <button type="button" on:click={handleVisit}>VISIT</button>
   {/if}
 </main>
+
+<style>
+	ul {
+		padding-left: 1rem;
+	}
+	ul li {
+		margin-bottom: 0.25rem;
+	}
+</style>
