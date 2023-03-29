@@ -13,13 +13,19 @@
     // Replace "/cisapi" with "/cisapp/explorer"
     url = url.replace("/cisapi", "/cisapp/explorer");
 
-    // Add ".xml" before the parameters
-    const index = url.indexOf("?");
-    if (index !== -1) {
-      url = url.slice(0, index) + ".xml" + url.slice(index);
-    } else {
-      url += ".xml";
-    }
+    // Add ".xml" before the parameters if it doesn't already exist
+	const index = url.indexOf("?");
+	if (index !== -1) {
+	  const extension = url.slice(index - 4, index);
+	  if (extension !== ".xml") {
+		url = url.slice(0, index) + ".xml" + url.slice(index);
+	  }
+	} else {
+	  const extension = url.slice(-4);
+	  if (extension !== ".xml") {
+		url += ".xml";
+	  }
+	}
 
     // Add "mode=cascade" parameter if requested
     // Replace "mode=*" with "mode=cascade" if it already exists
