@@ -5,11 +5,11 @@
     }
 
     // Special case: if url matches https://courses.illinois.edu/cisapi/schedule/courses?year=2012&term=spring§ionTypeCode=LEC§ionTypeCode=Q&collegeCode=KV&creditHours=3&subject=CHEM&sessionId=1&gened=NAT&qp=atomic+structure
-    // Then add ampersands before each section symbol.
+    // Then add ampersands before each section symbol and make §ionTypeCode=LEC§ionTypeCode=Q into &sectionTypeCode=LEC&sectionTypeCode=Q
     const specialUrlPattern =
       /^https:\/\/courses\.illinois\.edu\/cisapi\/schedule\/courses\?.*$/;
     if (specialUrlPattern.test(url)) {
-      url = url.replace(/§/g, "&sect;");
+      url = url.replace(/§/g, "&sect");
     }
 
     // Replace "/cisapi" with "/cisapp/explorer"
