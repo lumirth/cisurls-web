@@ -8,7 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
-    "deploy": "pnpm gh-pages -d dist"
+    "deploy": "pnpm gh-pages -d dist",
+    "bd": "pnpm run build && pnpm run deploy"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^2.0.2",
