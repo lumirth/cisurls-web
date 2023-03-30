@@ -86,7 +86,7 @@
     </li>
     <li>
       The XML schema for the UIUC CIS API can be found at
-      <a href="https://mirth.cc/cisurls/cisapi.xsd">/cisapi.xsd.</a> This schema
+      <a href="https://mirth.cc/cisurls-web/cisapi.xsd">/cisapi.xsd.</a> This schema
       cannot be found elsewhere, as the link in the documentation is broken.
     </li>
   </ul>
