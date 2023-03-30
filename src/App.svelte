@@ -183,11 +183,13 @@
     border-radius: 0.5rem;
     padding: 0.1rem 0.3rem;
   }
+
   button {
     border-radius: 0.2rem;
     cursor: pointer;
     margin-left: 0.1rem;
     margin-right: 0.1rem;
+    border: 1px solid #e7e7e7;
     /* border-radius: 0.2rem; */
     padding: 0.1rem 0.3rem;
     background-color: #e7e7e7;
@@ -200,6 +202,7 @@
     transition: all 0.1s ease-in-out;
   }
   input {
+    font-family: 'Fira Code', monospace;
     background-color: #e7e7e7;
     border-radius: 0.2rem;
     width: 225px;
