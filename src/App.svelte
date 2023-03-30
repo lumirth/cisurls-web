@@ -130,7 +130,7 @@
   <form on:submit={handleConvertSubmit}>
     <label for="originalUrl"
       >This tool converts <code>cisapp/explorer/schedule</code> course URLs to
-      <code>courses.illinois.edu</code> URLs:</label
+      <code>search</code> URLs:</label
     >
     <br />
     <input
