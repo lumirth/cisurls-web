@@ -188,7 +188,6 @@
     cursor: pointer;
     margin-left: 0.1rem;
     margin-right: 0.1rem;
-    border: 1px solid #f8f8f8;
     /* border-radius: 0.2rem; */
     padding: 0.1rem 0.3rem;
     background-color: #e7e7e7;
