@@ -194,6 +194,7 @@
     padding: 0.1rem 0.3rem;
     background-color: #e7e7e7;
     font-family: "Inter", sans-serif;
+    color: black;
     font-weight: 400;
     transition: all 0.1s ease-in-out;
   }
