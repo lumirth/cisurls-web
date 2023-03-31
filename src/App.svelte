@@ -176,6 +176,30 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  @media (max-width: 800px) {
+    main {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    button {
+      height: 2rem; 
+      margin-top: 1rem; 
+    }
+    input {
+      height: 1.7rem;
+      outline: none;
+      border: 1px solid transparent;
+    }
+    label {
+      line-height: 1.75;
+    }
+    label code {
+      line-height: 1.75;
+    }
   }
   code {
     background-color: #f8f8f8;
@@ -253,5 +277,10 @@
   }
   ul li {
     margin-bottom: 0.5rem;
+  }
+
+  code {
+    position: relative;
+    bottom: 0.1rem;
   }
 </style>
