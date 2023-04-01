@@ -219,8 +219,6 @@
 
   @media (min-width: 768px) {
     .page__content {
-      max-width: 850px;
-      margin-top: 3rem;
       margin-left: auto;
       margin-right: auto;
     }
