@@ -68,10 +68,10 @@
     const summary = document.querySelector("summary");
     const code = summary.querySelector("code");
     if (!code) return;
-    if (code.textContent === "DETAILS ABOUT THIS TOOL ▼") {
-      code.textContent = "DETAILS ABOUT THIS TOOL ▲";
+    if (code.textContent === "DETAILS ▼") {
+      code.textContent = "DETAILS ▲";
     } else {
-      code.textContent = "DETAILS ABOUT THIS TOOL ▼";
+      code.textContent = "DETAILS ▼";
     }
   }
 </script>
@@ -80,7 +80,7 @@
   <details>
     <summary on:click={changeSummaryText} style="cursor:pointer;"
       ><code class="text--big-technical code--inline"
-        >DETAILS ABOUT THIS TOOL ▼</code
+        >DETAILS ▼</code
       ></summary
     >
     <ul>
@@ -216,6 +216,16 @@
 </main>
 
 <style>
+
+  @media (min-width: 768px) {
+    .page__content {
+      max-width: 700px;
+      margin-top: 3rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
   ul {
     padding-left: 1rem;
   }
@@ -236,7 +246,15 @@
   }
 
   details {
+    margin-top: 2rem;
     margin-bottom: 1rem;
+  }
+
+  summary code {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 
   details > summary {
