@@ -185,6 +185,11 @@
   ul {
     padding-left: 1rem;
   }
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+  
   label {
     line-height: 1;
   }
