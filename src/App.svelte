@@ -122,9 +122,9 @@
   <!-- First form for convertCourseURL -->
   <form on:submit={handleSubmitDoc}>
     <label for="originalUrl"
-      >This tool converts documentation <code class="code--inline">cisapi</code>
+      >This tool converts <code class="code--inline">cisapi/schedule</code>
       URLs to functional
-      <code class="code--inline">cisapp/explorer</code> URLs:</label
+      <code class="code--inline">cisapp/explorer/schedule</code> URLs:</label
     >
     <br />
     <div class="input-and-buttons-container">
